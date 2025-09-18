@@ -6,17 +6,17 @@
 
 # なんでデータないんだよ！エラーだよ！
 execute \
-unless data storage reizo_tools:_ Tools.DisplayTool.Block run \
+unless data storage reizo_tools:_ DisplayTool.Block run \
 function reizo_mcfunc_engin:error/args {Args:"Block"}
 
 # データがあるときに召喚！
 $execute \
-if data storage reizo_tools:_ Tools.DisplayTool.Block run \
+if data storage reizo_tools:_ DisplayTool.Block run \
 summon block_display ~-0.5 ~-0.5 ~-0.5 {block_state:{Name:"$(Block)"},Tags:["reizo_mcfunc_Engin.BD.Init"]}
 
 # 音もだせ！
 execute \
-if data storage reizo_tools:_ Tools.DisplayTool.Block run \
+if data storage reizo_tools:_ DisplayTool.Block run \
 playsound block.amethyst_block.hit player @a ~ ~ ~ 1 1 1
 
 # 俺、なんでairなんだよ。

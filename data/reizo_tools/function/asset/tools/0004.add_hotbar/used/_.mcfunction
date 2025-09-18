@@ -13,25 +13,25 @@ return run function reizo_tools:asset/tools/0004.add_hotbar/used/fail
     # OMD呼び出し
     function #oh_my_dat:please
     # OMDをコピー
-    data modify storage reizo_tools:_ Tools.AddHotBar set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar
+    data modify storage reizo_tools:_ AddHotBar set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar
 
 # ホットバー移動
 execute \
-if data storage reizo_tools:_ Tools.AddHotBar{Mode:0} run \
+if data storage reizo_tools:_ AddHotBar{Mode:0} run \
 function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/_
 
 # ホットバー追加
 execute \
-if data storage reizo_tools:_ Tools.AddHotBar{Mode:1} run \
+if data storage reizo_tools:_ AddHotBar{Mode:1} run \
 function reizo_tools:asset/tools/0004.add_hotbar/used/add_hotbar/_
 
 # ホットバー削除
 execute \
-if data storage reizo_tools:_ Tools.AddHotBar{Mode:2} run \
+if data storage reizo_tools:_ AddHotBar{Mode:2} run \
 function reizo_tools:asset/tools/0004.add_hotbar/used/remove_hotbar/_
 
 # OMDへコピー
-data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar set from storage reizo_tools:_ Tools.AddHotBar
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar set from storage reizo_tools:_ AddHotBar
 
 # お掃除
-data remove storage reizo_tools:_ Tools.AddHotBar
+data remove storage reizo_tools:_ AddHotBar

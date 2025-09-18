@@ -7,11 +7,11 @@
 #> Init
     # 最初にセレクトしているホットバーは0
     execute \
-    unless data storage reizo_tools:_ Tools.AddHotBar.SelectHotBar run \
-    data modify storage reizo_tools:_ Tools.AddHotBar.SelectHotBar set value 0
+    unless data storage reizo_tools:_ AddHotBar.SelectHotBar run \
+    data modify storage reizo_tools:_ AddHotBar.SelectHotBar set value 0
     # 配列
     execute \
-    unless data storage reizo_tools:_ Tools.AddHotBar._ run \
+    unless data storage reizo_tools:_ AddHotBar._ run \
     function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/init
 
 # 今どこにいるか確認
@@ -22,29 +22,29 @@ playsound block.chest.locked master @s ~ ~ ~ 0.5 2
 playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.3 2
 
 # Import
-data modify storage reizo_tools:_ Tools.AddHotBar._ append value []
+data modify storage reizo_tools:_ AddHotBar._ append value []
 function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/import/unless
 function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/import/if
 
 #> 次のを選択したいので[1]をExport
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][0]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][1]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][2]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][3]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][4]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][5]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][6]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][7]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
-    data modify storage reizo_tools:_ Tools.AddHotBar.Temp set from storage reizo_tools:_ Tools.AddHotBar._[1][8]
-    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ Tools.AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][0]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][1]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][2]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][3]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][4]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][5]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][6]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][7]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+    data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[1][8]
+    function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
 
 # Remove
-data remove storage reizo_tools:_ Tools.AddHotBar._[0]
+data remove storage reizo_tools:_ AddHotBar._[0]

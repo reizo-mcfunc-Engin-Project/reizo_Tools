@@ -14,11 +14,11 @@ tag @n[tag=reizo_mcfunc_Engin.BD.Init,type=block_display,nbt={block_state:{Name:
     # 右手！行ってこい！
     execute \
     if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
-    data modify storage reizo_tools:_ Tools.DisplayTool.Item set from entity @s SelectedItem
+    data modify storage reizo_tools:_ DisplayTool.Item set from entity @s SelectedItem
     # 左手先よ！
     execute \
     if data storage reizo_mcfunc_engin:_ Tool.Main_Address run \
-    data modify storage reizo_tools:_ Tools.DisplayTool.Item set from entity @s equipment.offhand
+    data modify storage reizo_tools:_ DisplayTool.Item set from entity @s equipment.offhand
 
 # 召喚
-function reizo_tools:asset/tools/0002.display_tool/used/fail/summon with storage reizo_tools:_ Tools.DisplayTool
+function reizo_tools:asset/tools/0002.display_tool/used/fail/summon with storage reizo_tools:_ DisplayTool
