@@ -6,7 +6,7 @@
 
 # 右手で持っているなら動かないよ！
 execute \
-if data storage reizo_tools:_ Tool.Main_Address run \
+if data storage reizo_mcfunc_engin:_ Tool.Main_Address run \
 return run function reizo_tools:asset/tools/0004.add_hotbar/used/fail
 
 #> OMD関連
