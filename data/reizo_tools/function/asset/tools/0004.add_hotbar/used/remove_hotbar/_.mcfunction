@@ -13,7 +13,7 @@ store result score $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp run \
 data get storage reizo_tools:_ AddHotBar._
 
 # アウトプット
-title @s actionbar [{"text":"ホットバーの数","color":"aqua"},{"text":":","color":"white"},{"score":{name:"$Tools.AddHotBar.ListCount",objective:"reizo_mcfunc_Engin.Temp"},color:"gold"}]
+tellraw @s [{"text":"ホットバーの数","color":"aqua"},{"text":":","color":"white"},{"score":{name:"$Tools.AddHotBar.ListCount",objective:"reizo_mcfunc_Engin.Temp"},color:"gold"}]
 
 # リセット
 scoreboard players reset $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp
@@ -40,3 +40,6 @@ playsound item.bundle.drop_contents master @s ~ ~ ~ 1 2 1
     function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
     data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[0][8]
     function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
+
+# 今どこにいるか確認
+function reizo_tools:asset/tools/0004.add_hotbar/used/check_select

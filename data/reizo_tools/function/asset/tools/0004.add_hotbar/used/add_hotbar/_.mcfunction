@@ -16,7 +16,7 @@ store result score $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp run \
 data get storage reizo_tools:_ AddHotBar._
 
 # いう
-title @s actionbar [{"text":"ホットバーの数","color":"aqua"},{"text":":","color":"white"},{"score":{"name":"$Tools.AddHotBar.ListCount","objective":"reizo_mcfunc_Engin.Temp"},"color":"gold"}]
+tellraw @s [{"text":"ホットバーの数","color":"aqua"},{"text":":","color":"white"},{"score":{"name":"$Tools.AddHotBar.ListCount","objective":"reizo_mcfunc_Engin.Temp"},"color":"gold"}]
 
 # リセット
 scoreboard players reset $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp

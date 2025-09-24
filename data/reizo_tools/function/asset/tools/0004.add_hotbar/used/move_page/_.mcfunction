@@ -15,7 +15,7 @@
     function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/init
 
 # 今どこにいるか確認
-function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/check_select
+function reizo_tools:asset/tools/0004.add_hotbar/used/check_select
 
 # 音を出してみる
 playsound block.chest.locked master @s ~ ~ ~ 0.5 2
