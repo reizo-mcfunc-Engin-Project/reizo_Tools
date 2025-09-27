@@ -1,6 +1,6 @@
-#> reizo_tools:asset/tools/0002.display_tool/used/sneak/false
+#> reizo_tools:asset/tools/0002.display_tool/used/summon/_
 #
-# ディスプレイの召喚のための準備
+# 
 #
 # @within function reizo_tools:asset/tools/0002.display_tool/used/_
 
@@ -25,13 +25,13 @@
     if data storage reizo_mcfunc_engin:_ Tool.Off_Address \
     anchored eyes \
     positioned ^ ^ ^4 run \
-    function reizo_tools:asset/tools/0002.display_tool/used/sneak/false/summon_display.m with storage reizo_tools:_ DisplayTool
+    function reizo_tools:asset/tools/0002.display_tool/used/summon/summon_display.m with storage reizo_tools:_ DisplayTool
     # 右手で視線から2マス先
     execute \
     if data storage reizo_mcfunc_engin:_ Tool.Main_Address \
     anchored eyes \
     positioned ^ ^ ^2 run \
-    function reizo_tools:asset/tools/0002.display_tool/used/sneak/false/summon_display.m with storage reizo_tools:_ DisplayTool
+    function reizo_tools:asset/tools/0002.display_tool/used/summon/summon_display.m with storage reizo_tools:_ DisplayTool
 
 #> デバッグ用
     # ストレージに見たいストレージを入れる。

@@ -1,8 +1,8 @@
-#> reizo_tools:asset/tools/0002.display_tool/used/fail/_
+#> reizo_tools:asset/tools/0002.display_tool/used/summon/fail/_
 #
-# 召喚されたディスプレイがアイテムだった場合はアイテムディスプレイにして再召喚
+# 
 #
-# @within function reizo_tools:asset/tools/0002.display_tool/used/summon_display
+# @within function reizo_tools:asset/tools/0002.display_tool/used/summon/summon_display.m
 
 # 死にます。
 kill @n[tag=reizo_mcfunc_Engin.BD.Init,type=block_display,nbt={block_state:{Name:"minecraft:air"}}]
@@ -21,4 +21,4 @@ tag @n[tag=reizo_mcfunc_Engin.BD.Init,type=block_display,nbt={block_state:{Name:
     data modify storage reizo_tools:_ DisplayTool.Item set from entity @s equipment.offhand
 
 # 召喚
-function reizo_tools:asset/tools/0002.display_tool/used/fail/summon with storage reizo_tools:_ DisplayTool
+function reizo_tools:asset/tools/0002.display_tool/used/summon/fail/summon.m with storage reizo_tools:_ DisplayTool

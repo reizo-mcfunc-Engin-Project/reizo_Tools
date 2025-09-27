@@ -1,4 +1,4 @@
-#> reizo_tools:asset/tools/0002.display_tool/used/sneak/_
+#> reizo_tools:asset/tools/0002.display_tool/used/kill/_
 #
 # 
 #
@@ -13,7 +13,7 @@ data modify storage reizo_tools:_ DisplayTool.DisplayData.Block set from entity 
 execute \
 if entity @n[type=block_display] \
 positioned as @n[type=block_display] run \
-function reizo_tools:asset/tools/0002.display_tool/used/sneak/true/particle.m with storage reizo_tools:_ DisplayTool.DisplayData.Block
+function reizo_tools:asset/tools/0002.display_tool/used/kill/particle.m with storage reizo_tools:_ DisplayTool.DisplayData.Block
 
 # kill!
 kill @n[type=#reizo_mcfunc_engin:displays,tag=!reizo_mcfunc_Engin.Object.CubeParticle]
