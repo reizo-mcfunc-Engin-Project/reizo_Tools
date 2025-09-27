@@ -22,23 +22,27 @@ execute \
 store result storage reizo_tools:_ DisplayTool.Mode int 1 run \
 scoreboard players get $Tools.DisplayTool.Mode reizo_mcfunc_Engin.Temp
 
-#> tellraw
+#> Modeを伝える
     # 0
     execute \
     if data storage reizo_tools:_ DisplayTool{Mode:0} run \
-    tellraw @s [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"召喚","color":"gold"}]
+    title @s actionbar [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"召喚","color":"gold"}]
     # 1
     execute \
     if data storage reizo_tools:_ DisplayTool{Mode:1} run \
-    tellraw @s [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"削除","color":"gold"}]
+    title @s actionbar [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"削除","color":"gold"}]
     # 2
     execute \
     if data storage reizo_tools:_ DisplayTool{Mode:2} run \
-    tellraw @s [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"セーブ","color":"gold"}]
+    title @s actionbar [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"セーブ","color":"gold"}]
     # 3
     execute \
     if data storage reizo_tools:_ DisplayTool{Mode:3} run \
-    tellraw @s [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"ロード","color":"gold"}]
+    title @s actionbar [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"ロード","color":"gold"}]
+
+# 音
+playsound ui.button.click master @s ~ ~ ~ 1 2
+playsound entity.player.levelup master @s ~ ~ ~ 0.1 2 0.1
 
 # スコアリセット
 scoreboard players reset $Tools.DisplayTool.Mode reizo_mcfunc_Engin.Temp
