@@ -16,7 +16,7 @@ function km_distance:as_to_at
     # ライブラリ使用のために、ストレージに移行
     data modify storage reizo_mcfunc_engin:lib In.Truncate set from storage km_distance: out
     # ライブラリ使用
-    function reizo_mcfunc_engin:lib/truncate/1
+    function reizo_libs:truncate/1
 
 # 出た距離をチャットに出す。
 function reizo_tools:asset/tools/0003.get_distance/used/loop/end/tell.m with storage reizo_mcfunc_engin:lib Return.Truncate

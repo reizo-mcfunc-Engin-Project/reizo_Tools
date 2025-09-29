@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:lib/for/_
+# @within function reizo_libs:for/_
 
 data modify storage reizo_tools:_ AddHotBar._ append value []
 data modify storage reizo_tools:_ AddHotBar._[-1] append value {id:"minecraft:air",Slot:0b,count:1}

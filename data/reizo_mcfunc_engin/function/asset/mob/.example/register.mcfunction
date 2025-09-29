@@ -11,17 +11,23 @@
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
     # 継承されることを前提とした、抽象的なMobかどうか。
     data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 0b
-        # 何かしら継承している。
-        execute \
-        if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
-        if data storage reizo_mcfunc_engin:mob Register.Extends run \
-        function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
     # 名前 String型
     data modify storage reizo_mcfunc_engin:mob Register.Name set value "お手本ゾンビマン"
     # 体力はどれぐらい？ Float型
     # data modify storage reizo_mcfunc_engin:mob Register.Health set value 1.0f
     # 持っているアイテム String型
-    data modify storage reizo_mcfunc_engin:mob Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"golden_axe"}}
+        # head
+        data modify storage reizo_mcfunc_engin:mob Register.Head set value {id:"glass"}
+        # chest
+        data modify storage reizo_mcfunc_engin:mob Register.Chest set value {id:"leather_chestplate"}
+        # legs
+        # data modify storage reizo_mcfunc_engin:mob Register.Legs set value {id:""}
+        # feet
+        # data modify storage reizo_mcfunc_engin:mob Register.Feet set value {id:""}
+        # main_hand
+        data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"golden_axe"}
+        # off_hand
+        # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:""}
     # 大きさはどれくらい？ Max = 16.0d
     data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型

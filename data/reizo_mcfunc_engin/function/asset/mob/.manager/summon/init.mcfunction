@@ -13,6 +13,12 @@
 # 登録処理
 function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo_mcfunc_engin:mob
 
+# 何かしら継承している。
+execute \
+if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
+if data storage reizo_mcfunc_engin:mob Register.Extends run \
+function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
+
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/_
 
