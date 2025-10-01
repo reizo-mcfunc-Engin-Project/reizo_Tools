@@ -17,7 +17,8 @@ data modify storage reizo_tools:_ DisplayTool.Mode set value 0
 
 # Mode変更
 execute \
-if score @s reizo_mcfunc_Engin.Sneaking matches 2 run \
+if score @s reizo_mcfunc_Engin.Sneaking matches 2 \
+rotated 0 0 run \
 function reizo_tools:asset/tools/0002.display_tool/tick/change_mode/_
 
 # 俺にだけ見えててくれ！(パクリ)
