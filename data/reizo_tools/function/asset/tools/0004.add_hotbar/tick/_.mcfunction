@@ -6,5 +6,6 @@
 
 # シフトを一瞬押した
 execute \
-if score @s reizo_mcfunc_Engin.Sneaking matches 1 run \
-function reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode
+if score @s reizo_mcfunc_Engin.Sneaking matches 1 \
+rotated 0 0 run \
+function reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode/_

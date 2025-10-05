@@ -1,8 +1,10 @@
-#> reizo_tools:asset/tools/0004.add_hotbar/used/move_page/check_select
+#> reizo_tools:asset/tools/0004.add_hotbar/used/check_select
 #
-# どこのホットバーを選択しているか確認する処理。
+# 
 #
-# @within function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/_
+# @within function
+#   reizo_tools:asset/tools/0004.add_hotbar/used/remove_hotbar/_
+#   reizo_tools:asset/tools/0004.add_hotbar/used/move_page/_
 
 # 配列の長さを取得
 execute \

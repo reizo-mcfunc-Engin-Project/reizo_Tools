@@ -1,8 +1,8 @@
-#> reizo_tools:asset/tools/0002.display_tool/tick/sneak/cube_particle
+#> reizo_tools:asset/tools/0002.display_tool/tick/kill/cube_particle
 #
-# キューブ上のパーティクルを召喚する
+# 
 #
-# @within function reizo_tools:asset/tools/0002.display_tool/tick/sneak/_
+# @within function reizo_tools:asset/tools/0002.display_tool/tick/kill/_
 
 execute \
 rotated as @e[tag=reizo_mcfunc_Engin.Object.CubeParticle,type=armor_stand] \

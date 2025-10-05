@@ -1,4 +1,4 @@
-#> reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode
+#> reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode/_
 #
 # 
 #
@@ -25,17 +25,17 @@ scoreboard players set $Tools.AddHotBar.Mode reizo_mcfunc_Engin.Temp 0
 # 0なら
 execute \
 if score $Tools.AddHotBar.Mode reizo_mcfunc_Engin.Temp matches 0 run \
-tellraw @a [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"セレクト","color":"gold"}]
+function reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode/staging/0
 
 # 1なら
 execute \
 if score $Tools.AddHotBar.Mode reizo_mcfunc_Engin.Temp matches 1 run \
-tellraw @a [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"追加","color":"gold"}]
+function reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode/staging/1
 
 # 2なら
 execute \
 if score $Tools.AddHotBar.Mode reizo_mcfunc_Engin.Temp matches 2 run \
-tellraw @a [{"text":"モード","color":"aqua"},{"text":":","color":"white"},{"text":"削除","color":"gold"}]
+function reizo_tools:asset/tools/0004.add_hotbar/tick/change_mode/staging/2
 
 # ストレージに移行
 execute \
