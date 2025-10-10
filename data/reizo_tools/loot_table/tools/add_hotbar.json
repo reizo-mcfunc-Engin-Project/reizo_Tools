@@ -43,7 +43,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "ホットバーを2つ追加する。",
+                                    "text": "ホットバーを追加する。",
                                     "color": "white",
                                     "italic": false
                                 }
@@ -54,7 +54,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "使用することで、ホットバーを移動できる。",
+                                    "text": "使用することで、ホットバーを移動 / 追加/ 削除できる。",
                                     "color": "white",
                                     "italic": false
                                 }
