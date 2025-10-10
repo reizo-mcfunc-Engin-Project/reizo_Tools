@@ -41,5 +41,19 @@ playsound item.bundle.drop_contents master @s ~ ~ ~ 1 2 1
     data modify storage reizo_tools:_ AddHotBar.Temp set from storage reizo_tools:_ AddHotBar._[0][8]
     function reizo_tools:asset/tools/0004.add_hotbar/used/move_page/copy_item/export/_.m with storage reizo_tools:_ AddHotBar.Temp
 
-# 今どこにいるか確認
-function reizo_tools:asset/tools/0004.add_hotbar/used/check_select
+#> 今どこにいるか確認
+    # 選んでいるところの値も1減らす
+        # スコアに変換
+        execute \
+        store result score $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp run \
+        data get storage reizo_tools:_ AddHotBar.SelectHotBar
+        # 1減らす
+        scoreboard players remove $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp 1
+        # ストレージに戻す
+        execute \
+        store result storage reizo_tools:_ AddHotBar.SelectHotBar int 1 run \
+        scoreboard players get $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp
+        # リセット
+        scoreboard players reset $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp
+    # 実行
+    function reizo_tools:asset/tools/0004.add_hotbar/used/check_select
