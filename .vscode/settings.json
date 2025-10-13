@@ -15,46 +15,46 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/register.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/register.mcfunction",
                     "content": [
-                        "#>reizo_mcfunc_engin:asset/mob/%namespace%/register",
+                        "#>reizo_tools:asset/mob/%namespace%/register",
                         "#",
                         "# Mobの登録処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/register/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/register/run.m",
                         "",
                         "#> データ登録",
                         "    # 継承(オプション)",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Extends append value {ID:\"\",namespace:\"\"}",
+                        "    data modify storage reizo_tools:mob Register.Extends append value {ID:\"\",namespace:\"\"}",
                         "    # 継承されないかどうか。 boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b",
+                        "    data modify storage reizo_tools:mob Register.Final set value 1b",
                         "    # 継承されることを前提とした、抽象的なMobかどうか。",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 0b",
+                        "    data modify storage reizo_tools:mob Register.IsAbstract set value 0b",
                         "    # 名前 String型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Name set value \"\"",
+                        "    data modify storage reizo_tools:mob Register.Name set value \"\"",
                         "    # 体力はどれぐらい？ Float型",
-                        "    # data modify storage reizo_mcfunc_engin:mob Register.Health set value 1.0f",
+                        "    # data modify storage reizo_tools:mob Register.Health set value 1.0f",
                         "    # 持っているアイテム String型",
                         "        # head",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Head set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Head set value {id:}",
                         "        # chest",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Chest set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Chest set value {id:}",
                         "        # legs",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Legs set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Legs set value {id:}",
                         "        # feet",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Feet set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Feet set value {id:}",
                         "        # main_hand",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.main_hand set value {id:}",
                         "        # off_hand",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.off_hand set value {id:}",
                         "    # 大きさはどれくらい？ Max = 16.0d double型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d",
+                        "    data modify storage reizo_tools:mob Register.Scale set value 1.1d",
                         "    # アイテムを落とさないか？ boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b",
+                        "    data modify storage reizo_tools:mob Register.DethItem_Empty set value 1b",
                         "    # 燃えるかどうか。 boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b",
+                        "    data modify storage reizo_tools:mob Register.Flammable set value 0b",
                         "    # 重力がどれくらい影響するか。高ければ高いほど重力の影響を受ける。値を-にすると浮き始める。 double型",
-                        "    # data modify storage reizo_mcfunc_engin:mob Register.Gravity set value 0.08d"
+                        "    # data modify storage reizo_tools:mob Register.Gravity set value 0.08d"
                     ]
                 }
             ]
@@ -65,16 +65,16 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/summon/_",
                         "#",
                         "# Mobの召喚処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/summon/run.m",
                         "",
                         "# 元となるEntityの召喚",
-                        "summon %entity% ~ ~ ~ {Tags:[\"reizo_mcfunc_Engin.Mob\",\"reizo_mcfunc_Engin.Mob.Init\"]}"
+                        "summon %entity% ~ ~ ~ {Tags:[\"reizo_tools.Mob\",\"reizo_tools.Mob.Init\"]}"
                     ]
                 }
             ],
@@ -93,13 +93,13 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/tick/_",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/tick/run.m",
                         "",
                         "# Tick処理"
                     ]
@@ -112,44 +112,44 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/register.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/object/%namespace%/register.mcfunction",
                     "content": [
-                        "#>reizo_mcfunc_engin:asset/object/%namespace%/register",
+                        "#>reizo_tools:asset/object/%namespace%/register",
                         "#",
                         "# Mobの登録処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/register/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/register/run.m",
                         "",
                         "#> データ登録",
                         "    # 継承(オプション)",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Extends append value {ID:\"\",namespace:\"\"}",
+                        "    data modify storage reizo_tools:mob Register.Extends append value {ID:\"\",namespace:\"\"}",
                         "    # 継承されないかどうか。 boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b",
+                        "    data modify storage reizo_tools:mob Register.Final set value 1b",
                         "    # 継承されることを前提とした、抽象的なMobかどうか。",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 0b",
+                        "    data modify storage reizo_tools:mob Register.IsAbstract set value 0b",
                         "    # 名前 String型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Name set value \"\"",
+                        "    data modify storage reizo_tools:mob Register.Name set value \"\"",
                         "    # 体力はどれぐらい？ Float型",
-                        "    # data modify storage reizo_mcfunc_engin:mob Register.Health set value 1.0f",
+                        "    # data modify storage reizo_tools:mob Register.Health set value 1.0f",
                         "    # 持っているアイテム String型",
                         "        # head",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Head set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Head set value {id:}",
                         "        # chest",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Chest set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Chest set value {id:}",
                         "        # legs",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Legs set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Legs set value {id:}",
                         "        # feet",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.Feet set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.Feet set value {id:}",
                         "        # main_hand",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.main_hand set value {id:}",
                         "        # off_hand",
-                        "        # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:}",
+                        "        # data modify storage reizo_tools:mob Register.off_hand set value {id:}",
                         "    # 大きさはどれくらい？ Max = 16.0d",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d",
+                        "    data modify storage reizo_tools:mob Register.Scale set value 1.1d",
                         "    # アイテムを落とさないか？ boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b",
+                        "    data modify storage reizo_tools:mob Register.DethItem_Empty set value 1b",
                         "    # 燃えるかどうか。 boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b"
+                        "    data modify storage reizo_tools:mob Register.Flammable set value 0b"
                     ]
                 }
             ]
@@ -160,16 +160,16 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/summon/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/object/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/summon/_",
                         "#",
                         "# Mobの召喚処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/summon/run.m",
                         "",
                         "# 元となるEntityの召喚",
-                        "summon %entity% ~ ~ ~ {Tags:[\"reizo_mcfunc_Engin.Mob\",\"reizo_mcfunc_Engin.Mob.Init\"]}"
+                        "summon %entity% ~ ~ ~ {Tags:[\"reizo_tools.Mob\",\"reizo_tools.Mob.Init\"]}"
                     ]
                 }
             ],
@@ -188,13 +188,13 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/tick/_",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
-                        "# @within function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m",
+                        "# @within function reizo_tools:asset/mob/.manager/tick/run.m",
                         "",
                         "# Tick処理"
                     ]
