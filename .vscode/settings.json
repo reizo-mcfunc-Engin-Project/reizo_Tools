@@ -15,9 +15,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/register.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/register.mcfunction",
                     "content": [
-                        "#>reizo_mcfunc_engin:asset/mob/%namespace%/register",
+                        "#>reizo_tools:asset/mob/%namespace%/register",
                         "#",
                         "# Mobの登録処理",
                         "#",
@@ -65,9 +65,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/summon/_",
                         "#",
                         "# Mobの召喚処理",
                         "#",
@@ -93,9 +93,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/tick/_",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
@@ -112,9 +112,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/register.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/object/%namespace%/register.mcfunction",
                     "content": [
-                        "#>reizo_mcfunc_engin:asset/object/%namespace%/register",
+                        "#>reizo_tools:asset/object/%namespace%/register",
                         "#",
                         "# Mobの登録処理",
                         "#",
@@ -160,9 +160,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/summon/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/object/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/summon/_",
                         "#",
                         "# Mobの召喚処理",
                         "#",
@@ -188,9 +188,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
+                    "rel": "data/reizo_tools/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_",
+                        "#> reizo_tools/function/asset/mob/%namespace%/tick/_",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
