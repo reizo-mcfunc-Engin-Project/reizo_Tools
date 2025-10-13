@@ -60,6 +60,17 @@
                                 }
                             ],
                             "mode": "append"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "チェックポイントが召喚された場所は常に読み込まれ続けることに注意しよう。",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
                         }
                     ]
                 }
