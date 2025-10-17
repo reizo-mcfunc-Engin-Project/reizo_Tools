@@ -10,7 +10,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": {"Tool":{"Address":"0004.add_hotbar","namespace":"reizo_tools"},"Sys":{"Tool":{"HotBarNum":"0"}}},
+                                "custom_data": {"Tool":{"ID":"0004.add_hotbar","namespace":"reizo_tools"},"Sys":{"Tool":{"HotBarNum":"0"}}},
                                 "consumable": {
                                     "animation": "none",
                                     "consume_seconds": 2147483647},

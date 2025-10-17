@@ -10,7 +10,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": {"Tool":{"Address":"0001.check_point","namespace":"reizo_tools"}},
+                                "custom_data": {"Tool":{"ID":"0001.check_point","namespace":"reizo_tools"}},
                                 "consumable": {
                                     "animation": "none",
                                     "consume_seconds": 2147483647},

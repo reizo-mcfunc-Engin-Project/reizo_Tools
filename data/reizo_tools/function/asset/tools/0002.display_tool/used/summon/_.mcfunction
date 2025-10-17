@@ -7,11 +7,11 @@
 #> 左手、又は右手のブロック取得
     # 右手のほうを優先したいので、左手の処理を前に...
     execute \
-    if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
+    if data storage reizo_mcfunc_engin:_ Tool.Off.ID run \
     data modify storage reizo_tools:_ DisplayTool.Block set from entity @s SelectedItem.id
     # 右手
     execute \
-    if data storage reizo_mcfunc_engin:_ Tool.Main_Address run \
+    if data storage reizo_mcfunc_engin:_ Tool.Main.ID run \
     data modify storage reizo_tools:_ DisplayTool.Block set from entity @s equipment.offhand.id
 
 # 何にも持っていないならガラスに。
@@ -22,13 +22,13 @@
 #> 右手と左手で召喚位置変更
     # 左手で視線から4マス先
     execute \
-    if data storage reizo_mcfunc_engin:_ Tool.Off_Address \
+    if data storage reizo_mcfunc_engin:_ Tool.Off.ID \
     anchored eyes \
     positioned ^ ^ ^4 run \
     function reizo_tools:asset/tools/0002.display_tool/used/summon/summon_display.m with storage reizo_tools:_ DisplayTool
     # 右手で視線から2マス先
     execute \
-    if data storage reizo_mcfunc_engin:_ Tool.Main_Address \
+    if data storage reizo_mcfunc_engin:_ Tool.Main.ID \
     anchored eyes \
     positioned ^ ^ ^2 run \
     function reizo_tools:asset/tools/0002.display_tool/used/summon/summon_display.m with storage reizo_tools:_ DisplayTool
